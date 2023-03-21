@@ -30,13 +30,15 @@ h6 {
 main section p {
   margin-top: 5%;
   text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ font-style: oblique;
 }
 
-article p {
+/* article p {
   padding-top: 5%;
   font-size: xx-large;
   text-align: center;
-}
+} */
 
 /* Clases */
 .subtitulo {
@@ -93,7 +95,8 @@ article p {
   padding-top: 5%;
 }
 .imgTaller2 {
-  width: 30%;
+  max-width: 299px;
+ max-height:168px ;
   
 }
 
@@ -107,11 +110,15 @@ article p {
 
 .TallerFlex {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
+ 
 }
 .flex1 {
-  display: flex;
+  text-align: center; 
 }
+
+
 /* IDs */
 #imgRedes {
  
@@ -157,5 +164,11 @@ text-align: center;
   #imgMat2 {
     display: none;
   }
+}
+@media (max-width: 830px) {
+  .TallerFlex {
+    flex-direction: column;
+  }
+
 }
 
