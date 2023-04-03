@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* biografia */
+.bgBio {
+  background: linear-gradient(yellowgreen, rgb(246, 138, 232));
+}
+
+#imgBio {
+  width: 100%;
+}
+
+.textBio {
+  margin-top: 6%;
+  margin-bottom: 6%;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+
+/* productos */
+.bgProductos {
+  background: linear-gradient(yellowgreen, rgb(1, 255, 221));
+}
+
+.max-h-500 {
+  max-height: 500px;
+}
+
+.card {
+  max-width: 200px;
+}
+
+#imgProdu {
+  min-height: 500px;
+}
+
+/* taller */
+.bgTaller {
+  background: linear-gradient(yellowgreen, rgb(255, 240, 103));
+}
+
+main section .imgTaller {
+  width: 100%;
+}
+@media (max-width: 350px) {
+  main section .imgTaller {
+    align-items: center;
+  }
+}
+main .TallerFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 830px) {
+  main .TallerFlex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+main .TallerFlex .flex1 {
+  text-align: center;
+}
+main .TallerFlex .flex1 .imgTaller2 {
+  max-width: 250px;
+  height: 150px;
+}
+
+/* contacto */
+.bgContacto {
+  background: linear-gradient(yellowgreen, orange);
+}
+
+#div_contacto {
+  padding: 5%;
+  text-align: center;
+  font-weight: bolder;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#div_contacto .flexContacto {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  padding: 5%;
+  border: 4px solid rgb(149, 228, 59);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media (max-width: 768px) {
+  #div_contacto .flexContacto {
+    width: 80%;
+  }
+}
+@media (max-width: 425px) {
+  #div_contacto .flexContacto {
+    width: 100%;
+  }
+}
+
+.buttonHome {
+  text-align: center;
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+}
+
+.bgIndex {
+  background: linear-gradient(yellowgreen, white);
+}
+
+/* header */
+header {
+  padding: 25px 50px;
+}
+header .imgLogo {
+  max-width: 70px;
+  margin: 10px;
+}
+
+/* footer */
+footer .flexUbi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .flexUbi .ubi1 {
+  width: 100%;
+}
+footer .flexUbi .textFooter {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  text-align: center;
+  padding: 15px;
+}
+footer #imgRedes {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 385px) {
+  .imgLogo {
+    display: none;
+  }
+  .flexUbi {
+    flex-direction: column;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}
+
+main .subtitulo {
+  margin-bottom: 5%;
+  margin-top: 10px;
+}
+main section p {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: oblique;
+}
+main section .vidIndex {
+  margin-left: 10%;
+  width: 80%;
+  height: 500px;
+}
+main article .imgMat {
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 425px) {
+  main article .imgMat {
+    flex-direction: column;
+    align-items: center;
+  }
+  main article #imgMat2 {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
