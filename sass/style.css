@@ -12,11 +12,13 @@
 
 #imgBio {
   width: 100%;
+  padding: 5%;
 }
 
 .textBio {
   margin-top: 6%;
   margin-bottom: 6%;
+  padding: 1%;
   text-align: center;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-style: oblique;
@@ -44,23 +46,24 @@
   background: linear-gradient(yellowgreen, rgb(255, 240, 103));
 }
 
-main section .imgTaller {
-  width: 100%;
-}
-@media (max-width: 350px) {
-  main section .imgTaller {
-    align-items: center;
+@media (min-width: 830px) {
+  main .carousel-inner {
+    max-height: 600px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
   }
 }
 main .TallerFlex {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 2px;
 }
 @media (min-width: 830px) {
   main .TallerFlex {
     flex-direction: row;
     justify-content: space-around;
+    gap: 1%;
   }
 }
 main .TallerFlex .flex1 {
@@ -90,6 +93,7 @@ main .TallerFlex .flex1 .imgTaller2 {
   flex-direction: column;
   width: 70%;
   padding: 5%;
+  border-radius: 2%;
   border: 4px solid rgb(149, 228, 59);
   background-color: rgba(255, 255, 255, 0.5);
 }
@@ -104,11 +108,37 @@ main .TallerFlex .flex1 .imgTaller2 {
   }
 }
 
-.buttonHome {
-  text-align: center;
+form label {
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.btnConsulta {
   font-weight: bolder;
   color: black;
   text-decoration: none;
+  border: 2px solid black;
+  padding: 1rem;
+  border-radius: 10%;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: auto;
+}
+.btnConsulta:hover {
+  background-color: yellowgreen;
+}
+
+.buttonHome {
+  font-weight: bolder;
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+.buttonHome:hover {
+  background-color: yellowgreen;
 }
 
 .bgIndex {
@@ -163,6 +193,7 @@ h6 {
   font-style: italic;
 }
 
+/* index */
 main .subtitulo {
   margin-bottom: 5%;
   margin-top: 10px;
