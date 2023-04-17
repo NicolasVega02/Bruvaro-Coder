@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* Importaciones */ /* biografia */
+/* Importaciones */
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff&display=swap");
+/* biografia */
 .bgBio {
   background: linear-gradient(yellowgreen, rgb(246, 138, 232));
 }
@@ -15,7 +17,6 @@
 }
 
 .textBio {
-  margin-top: 6%;
   margin-bottom: 6%;
   padding: 1%;
   text-align: center;
@@ -38,6 +39,7 @@
 }
 .card:hover {
   box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  background-color: yellowgreen;
 }
 
 #imgProdu {
@@ -70,6 +72,7 @@ main .TallerFlex {
   }
 }
 main .TallerFlex .flex1 {
+  margin-top: 30px;
   text-align: center;
 }
 main .TallerFlex .flex1 .imgTaller2 {
@@ -156,7 +159,7 @@ form label {
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "DynaPuff", sans-serif;
   box-sizing: border-box;
 }
 
@@ -167,7 +170,7 @@ h4,
 h5,
 h6 {
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "DynaPuff", sans-serif;
   font-style: italic;
 }
 
@@ -178,6 +181,10 @@ header {
 header .imgLogo {
   max-width: 70px;
   margin: 10px;
+}
+
+.active:hover {
+  text-decoration: underline;
 }
 
 /* Estilos para el pie de página */
