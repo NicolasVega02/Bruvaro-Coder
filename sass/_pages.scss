@@ -5,7 +5,10 @@
 }
 #imgBio {
   width: 100%;
-  padding: 5%;
+  @media (min-width: 830px) {
+    width: 100%;
+    padding: 5%;
+  }
 }
 .textBio {
   margin-top: 6%;
@@ -26,6 +29,10 @@
 }
 .card {
   max-width: 200px;
+  transition: box-shadow 0.3s ease;
+  &:hover {
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+  }
 }
 #imgProdu {
   min-height: 500px;
@@ -60,6 +67,10 @@ main {
       .imgTaller2 {
         max-width: 250px;
         height: 150px;
+        transition: box-shadow 0.3s ease;
+        &:hover {
+          box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+        }
       }
     }
   }
@@ -111,8 +122,10 @@ form label {
   width: 200px;
   background-color: rgba(255, 255, 255, 0.5);
   margin: auto;
+  transition: box-shadow 0.3s ease;
   &:hover {
     background-color: yellowgreen;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -123,7 +136,9 @@ form label {
   border: 2px solid black;
   padding: 0.5rem;
   border-radius: 20%;
+  transition: box-shadow 0.3s ease;
   &:hover {
     background-color: yellowgreen;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   }
 }
